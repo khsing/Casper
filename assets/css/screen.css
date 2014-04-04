@@ -37,7 +37,7 @@ html {
    -webkit-text-size-adjust: 100%;
 }
 body { margin: 0; }
-a { background: transparent; }
+a { background: transparent; text-decoration: none;}
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
@@ -452,9 +452,9 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     display: table;
     width: 100%;
-    height: 60%;
+    height: 160px;
     margin-bottom: 5rem;
-    text-align: center;
+    text-align: left;
     color: #fff;
     background: #303538 no-repeat center center;
     background-size: cover;
@@ -488,7 +488,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.8rem;
     line-height: 1.5em;
     font-weight: 300;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 0;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
@@ -496,7 +496,6 @@ margin on the iframe, cause it breaks stuff. */
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width:80%;
     max-width: 700px;
     margin: 4rem auto;
     padding-bottom: 4rem;
@@ -604,6 +603,46 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 1.5em;
 }
 
+.site-head-content {
+    width:90%;
+    max-width: 1000px;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.post:first-child{
+    margin-top:0px;
+}
+.wrap {
+    width: 90%;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.site-sidebar {
+    width: 25%;
+    float: left;
+    color: #3A4145;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6em;
+}
+
+.site-sidebar h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.site-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+.content {
+    float: right;
+    width: 75%;
+}
+
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
@@ -629,14 +668,14 @@ margin on the iframe, cause it breaks stuff. */
 /* Insert some mad padding up in the header for better spacing */
 .post-template .post-header {
     padding: 60px 0;
-    text-align: center;
+    text-align: left;
 }
 
-.post-template .blog-title {
+/*.post-template .blog-title {
     display: inline-block;
     padding: 2.5rem 0;
 }
-
+*/
 /* Keep images centred and within the bounds of the post-width */
 .post-content img {
     display: block;
@@ -741,7 +780,7 @@ margin on the iframe, cause it breaks stuff. */
    6. Tag archive
    ========================================================================== */
 
-.archive-template .site-head {
+/*.archive-template .site-head {
     height: auto;
     padding-bottom: 5rem;
 }
@@ -754,7 +793,7 @@ margin on the iframe, cause it breaks stuff. */
     display: block;
     margin-top: 5rem;
 }
-
+*/
 .tag-archive-header {
     padding: 20px 0;
     text-align: center;
@@ -781,11 +820,11 @@ margin on the iframe, cause it breaks stuff. */
     box-shadow: #fff 0 0 0 5px;
 }
 
-.archive-template .blog-title {
+/*.archive-template .blog-title {
     display: inline-block;
     padding: 2.5rem 0;
 }
-
+*/
 /* ==========================================================================
    7. Third Party Elements - Embeds from other services
    ========================================================================== */
