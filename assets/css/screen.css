@@ -610,6 +610,11 @@ margin on the iframe, cause it breaks stuff. */
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.site-head-content a {
+    color: #fff;
+}
+
 .post:first-child{
     margin-top:0px;
 }
@@ -1020,16 +1025,20 @@ margin on the iframe, cause it breaks stuff. */
         margin-left: 0;
     }
 
-    .site-head {
+/*    .site-head {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         height: auto;
-        min-height: 240px;
+        max-height: 160px;
         padding: 15% 0;
+    }*/
+    .content, .site-sidebar {
+        float: none;
+        width: auto;
     }
 
-    .blog-title {
+/*    .blog-title {
         font-size: 4rem;
         letter-spacing: -1px;
     }
@@ -1038,7 +1047,7 @@ margin on the iframe, cause it breaks stuff. */
         font-size: 1.7rem;
         line-height: 1.5em;
     }
-
+*/
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
@@ -1097,8 +1106,13 @@ margin on the iframe, cause it breaks stuff. */
         line-height: 1.6em;
     }
 
-    .site-head {
+/*    .site-head {
         padding: 10% 0;
+    }
+*/
+    .site-sidebar {
+        float: none;
+        width: auto;
     }
 
     .blog-title {
