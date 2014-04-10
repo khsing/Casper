@@ -16,9 +16,8 @@
 
     <article class="{{post_class}}">
         <header class="post-header">
-            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}} | <a href="{{url}}#disqus_thread"></a></span>
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-            <span class="post-meta"><a href="{{url}}#disqus_thread"></a></span>
         </header>
             <section class="post-content">
                 {{content}}
